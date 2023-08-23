@@ -1,5 +1,14 @@
+/* reset pre config */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   background: lemonchiffon;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 h1 {
@@ -7,8 +16,47 @@ h1 {
   text-align: center;
   font-size: 50px;
   font-weight: 700;
+  width: 100vw;
+  background-color: lemonchiffon;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
-img {
+.poster-image {
   width: 100vw;
+  height: auto;
+  translate: -10vw;
+}
+
+h2 {
+  margin-top: 44px;
+  font-style: italic;
+}
+
+body {
+  padding-bottom: 200px;
+  padding-inline: 10vw;
+}
+p {
+  text-indent: 44px;
+}
+
+table {
+  width: 100%;
+  background-color: coral;
+  border-radius: 20px;
+  border: 2px dashed black;
+  box-shadow: 0 10px 0 black;
+}
+td {
+  text-align: center;
+}
+th {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  padding-block: 20px;
 }
