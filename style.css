@@ -5,12 +5,7 @@
   padding: 0;
 }
 
-html {
-  background: lemonchiffon;
-  overflow-x: hidden;
-  width: 100vw;
-}
-
+/* Fixed movie name */
 h1 {
   color: crimson;
   text-align: center;
@@ -24,25 +19,25 @@ h1 {
   z-index: 1;
 }
 
+/* fullscreen movie's poster */
+html {
+  background: lemonchiffon;
+  overflow-x: hidden;
+  width: 100vw;
+}
 .poster-image {
   width: 100vw;
   height: auto;
   translate: -10vw;
 }
 
+/* space between each sections & italic style */
 h2 {
   margin-top: 44px;
   font-style: italic;
 }
 
-body {
-  padding-bottom: 200px;
-  padding-inline: 10vw;
-}
-p {
-  text-indent: 44px;
-}
-
+/* Decorate table */
 table {
   width: 100%;
   background-color: coral;
@@ -59,4 +54,14 @@ th {
   font-weight: 700;
   color: white;
   padding-block: 20px;
+}
+
+/* optional: footer space */
+body {
+  padding-bottom: 200px;
+  padding-inline: 10vw;
+}
+/* optional: Indent paragraph */
+p {
+  text-indent: 44px;
 }
