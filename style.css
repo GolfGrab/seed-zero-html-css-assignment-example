@@ -5,63 +5,82 @@
   padding: 0;
 }
 
-/* Fixed movie name */
+/* ----------------------------- page container ----------------------------- */
+/* change background color */
+html {
+  background: lemonchiffon;
+}
+/* make content stay in center width some space on left and right */
+body {
+  padding-inline: 10vw;
+}
+
+/* --------------------------- Movies name& poster -------------------------- */
+/* Movie name: add text color, stay in center and bigger font size */
 h1 {
   color: crimson;
   text-align: center;
   font-size: 50px;
   font-weight: 700;
-  width: 100vw;
-  background-color: lemonchiffon;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
 }
-
-/* fullscreen movie's poster */
-html {
-  background: lemonchiffon;
-  overflow-x: hidden;
-  width: 100vw;
-}
+/* Movie poster: make it full screen */
 .poster-image {
   width: 100vw;
   height: auto;
   translate: -10vw;
 }
 
-/* space between each sections & italic style */
+/* ------------------------- Movie details sections ------------------------- */
+/* topics: add space between each section and decorate text */
 h2 {
   margin-top: 44px;
   font-style: italic;
 }
+/* details: add indentation */
+p {
+  text-indent: 44px;
+}
 
-/* Decorate table */
+/* ---------------------------- Cast & Crew Table --------------------------- */
+/* table: add background color, radius border and shadow */
 table {
   width: 100%;
+
   background-color: coral;
   border-radius: 20px;
   border: 2px dashed black;
   box-shadow: 0 10px 0 black;
 }
+/* table data: align text in center */
 td {
   text-align: center;
 }
+/* table head: Decorate text */
 th {
-  text-align: center;
+  color: white;
   font-size: 24px;
   font-weight: 700;
-  color: white;
   padding-block: 20px;
 }
 
-/* optional: footer space */
-body {
-  padding-bottom: 200px;
-  padding-inline: 10vw;
+/* Bonus: Fixed movie name */
+h1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: lemonchiffon;
+  width: 100vw;
 }
-/* optional: Indent paragraph */
-p {
-  text-indent: 44px;
+/* -------------------------- BoNus: animate table -------------------------- */
+table {
+  width: 100%;
+  background-color: coral;
+  border-radius: 20px;
+  position: relative;
+  margin-block: 40px;
+}
+table:hover {
+  box-shadow: -20px 20px 0 orange, -40px 40px 0 red;
+  transition: 0.5s;
 }
